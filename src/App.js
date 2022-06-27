@@ -18,11 +18,7 @@ function App() {
       <Navigation></Navigation>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route
-          path="Authenticate"
-          element={<Authenticate></Authenticate>}
-        ></Route>
-        <GuestRoute></GuestRoute>
+        <Route path="/Authenticate" element={<Authenticate></Authenticate>} />
       </Routes>
     </BrowserRouter>
   );

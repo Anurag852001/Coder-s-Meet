@@ -2,6 +2,7 @@ import classes from "./Home.module.css";
 import Card from "../../Layouts/Card";
 import Button from "../../Layouts/Button";
 import { Link, useNavigate } from "react-router-dom";
+import logo from "../../Assets/images/logo.png";
 
 const Home = () => {
   const linkStyle = {
@@ -17,10 +18,7 @@ const Home = () => {
 
   return (
     <div className={classes.CardWrapper}>
-      <Card
-        logo="../Assets/images/logo.png"
-        heading="Welcome to Coder's meet!!!"
-      >
+      <Card heading="Welcome to Coder's meet!!!" type="home">
         <p className={classes.text}>
           We’re working hard to get Coder'sMeet ready for everyone! While we
           wrap up the finishing youches, we’re adding people gradually to make
