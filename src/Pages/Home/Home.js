@@ -1,7 +1,7 @@
 import classes from "./Home.module.css";
 import Card from "../../Layouts/Card";
 import Button from "../../Layouts/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const linkStyle = {
@@ -9,6 +9,10 @@ const Home = () => {
     textDecoration: "none",
     fontWwight: "bold",
     marginLeft: "10px",
+  };
+  const navigate = useNavigate();
+  const onClickHandler = () => {
+    navigate("/Authenticate");
   };
 
   return (
@@ -22,7 +26,10 @@ const Home = () => {
           wrap up the finishing youches, we’re adding people gradually to make
           sure nothing breaks
         </p>
-        <Button name="Get your Username"></Button>
+        <Button
+          name="Get your Username"
+          onClickHandler={onClickHandler}
+        ></Button>
         <div className={classes.signInWrapper}>
           <h4>Have an invite text?</h4>
           <Link to="/" style={linkStyle}>
