@@ -4,7 +4,7 @@ import Email from "./Email/Email";
 import classes from "./StepEmailPhone.module.css";
 import phoneimg from "../../../Assets/images/phone-white.png";
 import emailimg from "../../../Assets/images/mail-white.png";
-const StepEmailPhone = () => {
+const StepEmailPhone = (props) => {
   const [state, setState] = useState(1);
   const Component = state == 1 ? Phone : Email;
   return (
@@ -29,7 +29,7 @@ const StepEmailPhone = () => {
               <img src={emailimg} alt="emailimoji"></img>
             </button>
           </div>
-          <Component></Component>
+          <Component onClickHandler={props.onClickHandler}></Component>
         </div>
       </div>
     </>

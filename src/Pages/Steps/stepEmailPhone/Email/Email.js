@@ -13,7 +13,7 @@ const Email = (props) => {
       ></TextInput>
       <div>
         <div className={classes.actionButtonWrap}>
-          <Button name="Next" onClick={props.onNext} />
+          <Button name="Next" onClickHandler={props.onClickHandler} />
         </div>
         <p className={classes.bottomParagraph}>
           By entering your number, you’re agreeing to our Terms of Service and

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import stepAvatar from "../Steps/stepAvatar/stepAvatar";
 import stepEmailPhone from "../Steps/stepEmailPhone/StepEmailPhone";
-import stepOtp from "../Steps/stepOtp/stepOtp";
+import stepOtp from "../Steps/stepOtp/StepOtp";
 import stepName from "../Steps/stepName/stepName";
 import stepUsername from "../Steps/stepUsername/stepUsername";
 const Register = () => {

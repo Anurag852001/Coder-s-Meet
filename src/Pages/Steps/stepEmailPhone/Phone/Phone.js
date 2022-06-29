@@ -5,7 +5,9 @@ import Button from "../../../../Layouts/Button";
 import { useState } from "react";
 const Phone = (props) => {
   const [phoneNumber, setPhoneNumber] = useState("");
-  const onSubmitHandler = () => {};
+  const onSubmitHandler = () => {
+    props.onClickHandler(5);
+  };
   return (
     <Card heading="Enter your phone number" type="phone">
       <TextInput
@@ -14,7 +16,7 @@ const Phone = (props) => {
       ></TextInput>
       <div>
         <div className={classes.actionButtonWrap}>
-          <Button name="Next" onClick={onSubmitHandler}></Button>
+          <Button name="Next" onClickHandler={onSubmitHandler}></Button>
         </div>
         <p className={classes.bottomParagraph}>
           By entering your number, you’re agreeing to our Terms of Service and
