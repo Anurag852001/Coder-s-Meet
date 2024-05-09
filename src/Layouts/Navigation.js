@@ -23,5 +23,3 @@ const Navigation = () => {
   );
 };
 export default Navigation;
-
-// this is my repo
